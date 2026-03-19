@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# Author: Armit
-# Create Time: 2023/03/05
-# Modified: Forge Classic compatibility
-#   - No ldm dependency
-#   - Hooks VAE.decode / VAE.encode (backend/vae.py) instead of encoder/decoder.forward
-#   - Patch sd_vae._load_vae_dict to survive VAE reloads
-
 import math
 from time import time
 from traceback import print_exc
@@ -61,7 +53,7 @@ DEFAULT_ENABLED           = True
 DEFAULT_SMART_IGNORE      = False
 DEFAULT_ENCODER_PAD_SIZE  = 16
 DEFAULT_DECODER_PAD_SIZE  = 4
-DEFAULT_ENCODER_TILE_SIZE = 512
+DEFAULT_ENCODER_TILE_SIZE = 768
 DEFAULT_DECODER_TILE_SIZE = 16
 
 BBox = Tuple[int, int, int, int]

@@ -51,10 +51,10 @@ def get_default_decoder_tile_size() -> int:
 DEFAULT_OPEN              =  True
 DEFAULT_ENABLED           = True
 DEFAULT_SMART_IGNORE      = False
-DEFAULT_ENCODER_PAD_SIZE  = 16
+DEFAULT_ENCODER_PAD_SIZE  = 8
 DEFAULT_DECODER_PAD_SIZE  = 4
 DEFAULT_ENCODER_TILE_SIZE = 768
-DEFAULT_DECODER_TILE_SIZE = 16
+DEFAULT_DECODER_TILE_SIZE = 32
 
 BBox = Tuple[int, int, int, int]
 
